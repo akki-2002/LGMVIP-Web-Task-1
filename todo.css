@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #4444ce, green);
+    padding: 10px;
+}
+.todoapp{
+    width: 100%;
+    max-width: 540px;
+    background: #6e1f70;
+    margin: 100px auto 20px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.todoapp h2{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todoapp h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #cecbc5;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #f38b8b;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    color: white;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative; /*if we want to add some image in this ul conatiner thern make it relative */
+}
+ul li::before{
+    content: '';
+    position: absolute; /* if we want to add some image in this ul conatiner thern make it absolute */
+    height: 28px;
+    width: 28px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+ul li.checked{
+    color: rgba(255, 255, 255, 0.807);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    color: #000000;
+    line-height: 19px;
+}
+
+ul li span:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("todo.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.container{
+    width: 400px;
+    
+    border-radius: 8px;
+    padding: 33px;
+    text-align: center;
+    background-color: #c859c8;
+    margin: 35px auto;
+}
+.container h1{
+    color: white;
+    font-family: sans-serif;
+}
+input{
+    width: 270px;
+    padding: 8px;
+    border: 2px solid aqua;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+button{
+    width: 60px;
+    height: 35px;
+    background-color: #00ffffcc;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    cursor: pointer;
+   
+}
+
+.text ul{
+    position: relative;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color: rgb(33, 23, 11);
+    font-size: 19px;
+    text-align: left;
+    padding: 8px;
+    margin: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+*/
